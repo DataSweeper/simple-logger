@@ -1,0 +1,16 @@
+{
+  "name": "simple-logger",
+  "version": "0.0.0",
+  "Author": {
+    "name": "Siva Gnanam",
+    "email": "ssivagnanam.a@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DataSweeper/simple-logger.git"
+  },
+  "description": "Just for fun",
+  "dependencies": {
+    "tap": "^2.0.0"
+  }
+}
