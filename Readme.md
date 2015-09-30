@@ -18,4 +18,5 @@ log1.warn("javascirpt warning.");
 
 *TODO*
   > Log rotation functionality.
+  
   > Adding Log directory - where the logger should log.
