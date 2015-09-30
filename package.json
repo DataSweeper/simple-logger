@@ -12,5 +12,8 @@
   "description": "Just for fun",
   "dependencies": {
     "tap": "^2.0.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
   }
 }

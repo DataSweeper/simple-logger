@@ -6,7 +6,7 @@ config = {
 		size: 5
 	},
 	"server" : {
-		type : "file",
+		type : "console",
 		name : "server.log",
 		size : 5
 	}
