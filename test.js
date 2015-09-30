@@ -1,5 +1,7 @@
-logger = require('./index').get('agent');
-logger1 = require('./index').get('server');
+logger = require('./index');
 
-logger.info("Getting started.");
-logger1.info("Hello world.");
+log = new logger('agent');
+log1 = new logger('server');
+
+log.info("Hello world.");
+log1.warn("javascirpt warning.");

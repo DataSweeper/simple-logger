@@ -12,8 +12,13 @@ var LEVELS = {
   'fatal': 60
 }
 
-function SimpleLogger() {
+function SimpleLogger(name) {
 	EventEmitter.call(this);
+  util._extend(SimpleLogger.prototype, loggingFunctions)
+  this.type = config[name].type;
+  this.name = config[name].name;
+  this.size = config[name].size;
+  this.output = new Output(this)
  }
 
 util.inherits(SimpleLogger, EventEmitter);
@@ -28,14 +33,14 @@ Object.keys(LEVELS).forEach(function bulidLevel(_level) {
   }
 })
 
-SimpleLogger.prototype.get = function(name) {
+/*SimpleLogger.prototype.get = function(name) {
   util._extend(SimpleLogger.prototype, loggingFunctions)
   this.type = config[name].type;
   this.name = config[name].name;
   this.size = config[name].size;
   this.output = new Output(this)
   return this;
-};
+};*/
 
 SimpleLogger.prototype.coerce = function coerce(value) {
   if (!isNaN(parseInt(value, 10)) && isFinite(value)) {
@@ -47,4 +52,4 @@ SimpleLogger.prototype.coerce = function coerce(value) {
   return LEVELS[value] || 50
 }
 
-module.exports = new SimpleLogger();
+module.exports = SimpleLogger;
