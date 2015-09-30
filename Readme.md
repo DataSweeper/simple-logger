@@ -4,8 +4,10 @@
   > You can specify where to write log (ex : file, console)
 
 *example*
+
+npm install logkeeper
 ```
-logger = require('./index');
+logger = require('logkeeper');
 
 log = new logger('agent');
 log1 = new logger('server');
