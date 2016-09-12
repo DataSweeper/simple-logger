@@ -3,8 +3,9 @@
 
 INSTALL :
 --------
-
+```
 npm install logkeeper
+```
 
 CONFIGURATION :
 -------------
