@@ -1,6 +1,6 @@
 {
   "name": "logkeeper",
-  "version": "0.1.3",
+  "version": "0.1.2",
   "Author": {
     "name": "Siva Gnanam",
     "email": "sivagnanam@zohocorp.com"
@@ -9,9 +9,9 @@
     "type": "git",
     "url": "https://github.com/DataSweeper/simple-logger.git"
   },
-  "description": "Just for fun",
+  "description": "Node js logging",
   "dependencies": {
-    "tap": "^2.0.0"
+    /*"tap": "^2.0.0"*/
   },
   "scripts": {
     "test": "tap test/*.js"
