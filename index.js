@@ -2,6 +2,7 @@ var EventEmitter = require("events").EventEmitter;
 var util = require("util");
 var config = require('./config');
 var Output = require('./lib/output');
+var filerotation = require('./lib/filerotation');
 
 var LEVELS = {
   'trace': 10,
@@ -18,8 +19,9 @@ function SimpleLogger(name) {
   this.type = config[name].type;
   this.name = config[name].name;
   this.size = config[name].size;
-  this.output = new Output(this)
- }
+  new filerotation(this.name, this.size).check();
+  this.output = new Output(this);
+}
 
 util.inherits(SimpleLogger, EventEmitter);
 
