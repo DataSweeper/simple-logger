@@ -1,6 +1,6 @@
 {
   "name": "logkeeper",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "Author": {
     "name": "Siva Gnanam",
     "email": "sivagnanam@zohocorp.com"
@@ -11,9 +11,5 @@
   },
   "description": "Node js logging",
   "dependencies": {
-    /*"tap": "^2.0.0"*/
-  },
-  "scripts": {
-    "test": "tap test/*.js"
   }
 }
